@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h2>Assignement</h2>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/userlist.html">Customers</a></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <header>
+          <h1>Customers</h1>
+        </header>
+        <div class="widgets">
+          <div class="widget total-customers-widget">
+            <h3>General Customers</h3>
+            <p id="total-customers">0</p>
+          </div>
+          <div class="widget total-customers-widget">
+            <h3>Admins</h3>
+            <p id="total-customers">0</p>
+          </div>
+          <div class="widget blocked-customers-widget">
+            <h3>Creators</h3>
+            <p id="blocked-customers">0</p>
+          </div>
+        </div>
+
+        <section id="customers">
+          <h1>User List</h1>
+          <div class="filterbox">
+            <div class="category-filter">
+              <select>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Manager</option>
+              </select>
+            </div>
+            <div class="serachbox">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search users..."
+              />
+              <button id="filterButton" class="filter-button">Filter</button>
+            </div>
+          </div>
+          <div>
+            <table class="user-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Project</th>
+                  <th>Enrolled</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="user">
+                  <td>John Doe</td>
+                  <td>Developer</td>
+                  <td>Project A</td>
+                  <td>2023-05-15</td>
+                  <td>
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                  </td>
+                </tr>
+                <tr class="user">
+                  <td>Jane Smith</td>
+                  <td>Designer</td>
+                  <td>Project B</td>
+                  <td>2023-04-20</td>
+                  <td>
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                  </td>
+                </tr>
+                <tr class="user">
+                  <td>Michael Johnson</td>
+                  <td>Manager</td>
+                  <td>Project C</td>
+                  <td>2023-03-10</td>
+                  <td>
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                  </td>
+                </tr>
+                <tr class="user">
+                  <td>Emily Brown</td>
+                  <td>Developer</td>
+                  <td>Project D</td>
+                  <td>2023-02-05</td>
+                  <td>
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

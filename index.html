@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h2>Assignement</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="/userlist.html">Customers</a></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <header>
+          <h1>Customers</h1>
+        </header>
+        <div class="widgets">
+          <div class="widget total-customers-widget">
+            <h3>General Customers</h3>
+            <p id="total-customers">0</p>
+          </div>
+          <div class="widget total-customers-widget">
+            <h3>Admins</h3>
+            <p id="total-customers">0</p>
+          </div>
+          <div class="widget blocked-customers-widget">
+            <h3>Creators</h3>
+            <p id="blocked-customers">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
